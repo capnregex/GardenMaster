@@ -1,0 +1,77 @@
+<%= form_for(@plant) do |f| %>
+  <% if @plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% @plant.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :count %><br />
+    <%= f.text_field :count %>
+  </div>
+  <div class="field">
+    <%= f.label :yield %><br />
+    <%= f.text_field :yield %>
+  </div>
+  <div class="field">
+    <%= f.label :yield_unit %><br />
+    <%= f.text_field :yield_unit %>
+  </div>
+  <div class="field">
+    <%= f.label :hardiness %><br />
+    <%= f.text_field :hardiness %>
+  </div>
+  <div class="field">
+    <%= f.label :adlf_min %><br />
+    <%= f.text_field :adlf_min %>
+  </div>
+  <div class="field">
+    <%= f.label :adlf_max %><br />
+    <%= f.text_field :adlf_max %>
+  </div>
+  <div class="field">
+    <%= f.label :seed %><br />
+    <%= f.text_field :seed %>
+  </div>
+  <div class="field">
+    <%= f.label :spacing %><br />
+    <%= f.text_field :spacing %>
+  </div>
+  <div class="field">
+    <%= f.label :rows_per_bed %><br />
+    <%= f.text_field :rows_per_bed %>
+  </div>
+  <div class="field">
+    <%= f.label :alternate_rows %><br />
+    <%= f.check_box :alternate_rows %>
+  </div>
+  <div class="field">
+    <%= f.label :depth %><br />
+    <%= f.text_field :depth %>
+  </div>
+  <div class="field">
+    <%= f.label :feedings_min %><br />
+    <%= f.text_field :feedings_min %>
+  </div>
+  <div class="field">
+    <%= f.label :feedings_max %><br />
+    <%= f.text_field :feedings_max %>
+  </div>
+  <div class="field">
+    <%= f.label :avg_height %><br />
+    <%= f.text_field :avg_height %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

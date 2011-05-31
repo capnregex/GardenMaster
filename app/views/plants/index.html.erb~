@@ -1,0 +1,38 @@
+<h1>Plants</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Count</th>
+    <th>Yield</th>
+    <th>Hardiness</th>
+    <th>Adlf</th>
+    <th>Seed</th>
+    <th>Space</th>
+    <th>Rows</th>
+    <th>Depth</th>
+    <th>Feedings</th>
+    <th>Avg height</th>
+    <th><%= link_to 'New', new_plant_path %></th>
+  </tr>
+
+<% @plants.each do |plant| %>
+  <tr>
+    <td><%= link_to plant.name, plant %></td>
+    <td><%= plant.count %></td>
+    <td><%= plant.yield %> <%= plant.yield_unit %></td>
+    <td><%= plant.hardiness %></td>
+    <td><%= plant.adlf_min %>..<%= plant.adlf_max %></td>
+    <td><%= plant.seed %></td>
+    <td><%= plant.spacing %>"</td>
+    <td><%= plant.rows_per_bed %><%= plant.alternate_rows ? ' alt' : '' %></td>
+    <td><%= plant.depth %>"</td>
+    <td><%= plant.feedings_min %>..<%= plant.feedings_max %></td>
+    <td><%= plant.avg_height %></td>
+    <td><%= link_to 'Edit', edit_plant_path(plant) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

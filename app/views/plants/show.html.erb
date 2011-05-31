@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @plant.name %>
+</p>
+
+<p>
+  <b>Count:</b>
+  <%= @plant.count %>
+</p>
+
+<p>
+  <b>Yield:</b>
+  <%= @plant.yield %>
+</p>
+
+<p>
+  <b>Yield unit:</b>
+  <%= @plant.yield_unit %>
+</p>
+
+<p>
+  <b>Hardiness:</b>
+  <%= @plant.hardiness %>
+</p>
+
+<p>
+  <b>Adlf min:</b>
+  <%= @plant.adlf_min %>
+</p>
+
+<p>
+  <b>Adlf max:</b>
+  <%= @plant.adlf_max %>
+</p>
+
+<p>
+  <b>Seed:</b>
+  <%= @plant.seed %>
+</p>
+
+<p>
+  <b>Spacing:</b>
+  <%= @plant.spacing %>
+</p>
+
+<p>
+  <b>Rows per bed:</b>
+  <%= @plant.rows_per_bed %>
+</p>
+
+<p>
+  <b>Alternate rows:</b>
+  <%= @plant.alternate_rows %>
+</p>
+
+<p>
+  <b>Depth:</b>
+  <%= @plant.depth %>
+</p>
+
+<p>
+  <b>Feedings min:</b>
+  <%= @plant.feedings_min %>
+</p>
+
+<p>
+  <b>Feedings max:</b>
+  <%= @plant.feedings_max %>
+</p>
+
+<p>
+  <b>Avg height:</b>
+  <%= @plant.avg_height %>
+</p>
+
+
+<%= link_to 'Edit', edit_plant_path(@plant) %> |
+<%= link_to 'Back', plants_path %>

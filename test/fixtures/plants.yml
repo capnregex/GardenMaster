@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  count: 1
+  yield: 1
+  yield_unit: MyString
+  hardiness: MyString
+  adlf_min: 1
+  adlf_max: 1
+  seed: MyString
+  spacing: 1
+  rows_per_bed: 1
+  alternate_rows: false
+  depth: 1.5
+  feedings_min: 1
+  feedings_max: 1
+  avg_height: 1.5
+
+two:
+  name: MyString
+  count: 1
+  yield: 1
+  yield_unit: MyString
+  hardiness: MyString
+  adlf_min: 1
+  adlf_max: 1
+  seed: MyString
+  spacing: 1
+  rows_per_bed: 1
+  alternate_rows: false
+  depth: 1.5
+  feedings_min: 1
+  feedings_max: 1
+  avg_height: 1.5
